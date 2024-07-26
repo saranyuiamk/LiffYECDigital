@@ -34,13 +34,13 @@
           return liff.getProfile();
         } else {
           liff.login({
-            redirectUri: "https://superb-puffpuff-32dc94.netlify.app/",
+            redirectUrl: "https://superb-puffpuff-32dc94.netlify.app/",
           });
         }
       })
       .then((profile) => {
         window.location.replace(
-          `https://docs.google.com/forms/d/e/1FAIpQLScq3UVgNXFEs5vKxCzRu5pqBB8TtVRAgMroaVcmkzdHMsPeLg/viewform?usp=pp_url&entry.691322888=${profile.userId}&entry.1242655762=${profile.displayName}&entry.47525688=${profile.pictureUrl}&entry.1719911715=${profile.statusMessage}`
+          `https://docs.google.com/forms/d/e/1FAIpQLSf2x2dsphZjW31Qgtciof6a36hxO639rwKEX8ieerni9nsvgA/viewform?usp=pp_url&entry.1433299176=${profile.userId}&entry.895226111=${profile.displayName}&entry.1568821237=${profile.pictureUrl}&entry.2082949252=${profile.statusMessage}`
         );
       });
     liff.init(
