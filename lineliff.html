@@ -1,56 +1,12 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
-  <title>กำลังเข้าสู่ Form</title>
-  <style>
-    .centerScreen {
-      margin-top: 20;
-      margin-right: auto;
-      margin-bottom: 20;
-      margin-left: auto;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
-<body style="background-color: powderblue;">
-  <div class="centerScreen">
-    <center>
-      <img src="https://drive.google.com/uc?id=1mEyShWSX9rPf4klIDeMTlHAOc4BsySFK" height="200px" , width="200px" />
-      <h1>
-        กำลังเข้าสู่ Google Form กรุณารอซักครู่
-      </h1>
-    </center>
-  </div>
+<body>
+    <h1>hello test</h1>
+    
 </body>
-<footer>
-  <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/versions/2.22.3/sdk.js"></script>
-  <script>
-    /// Config Your LIFF ID Here
-    const liffId = "2005917351-k9GDoPZA";
-    /// Config Your LIFF ID Here
-    liff.ready
-      .then(() => {
-        if (liff.isLoggedIn()) {
-          return liff.getProfile();
-        } else {
-          liff.login({
-            redirectUrl: "https://superb-puffpuff-32dc94.netlify.app/",
-          });
-        }
-      })
-      .then((profile) => {
-        window.location.replace(
-          `https://docs.google.com/forms/d/e/1FAIpQLSf2x2dsphZjW31Qgtciof6a36hxO639rwKEX8ieerni9nsvgA/viewform?usp=pp_url&entry.1433299176=${profile.userId}&entry.895226111=${profile.displayName}&entry.1568821237=${profile.pictureUrl}&entry.2082949252=${profile.statusMessage}`
-        );
-      });
-    liff.init(
-      {
-        liffId: liffId,
-      },
-      () => {},
-      (err) => {
-        window.alert(err);
-      }
-    );
-  </script>
-</footer>
+</html>
